@@ -121,9 +121,5 @@ USE_TZ = True
 # TINYMCE_JS_URL = 'https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js'
 # TINYMCE_COMPRESSOR = False
 
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/3.1/howto/static-files/
-
 STATIC_URL = '/static/'
 django_heroku.settings(locals())
-

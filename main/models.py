@@ -17,5 +17,3 @@ class Pagina(models.Model):
             self.slug = self.nome.replace(" ","-").lower()
 
         super().save(*args, **kwargs)  # Call the "real" save() method.
-
-    
