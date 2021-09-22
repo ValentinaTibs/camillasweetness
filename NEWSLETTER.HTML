@@ -1,5 +1,45 @@
+<style>
+@use postcss-preset-env {
+  stage: 0
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  
+  & > input {
+    flex: 1 1 10ch;
+    margin: .5rem;
+    
+    &[type="email"] {
+      flex: 3 1 30ch;
+    }
+  }
+}
+
+input {
+  border: none;
+  background: hsl(0 0% 93%);
+  border-radius: .25rem;
+  padding: .75rem 1rem;
+  
+  &[type="submit"] {
+    background: hotpink;
+    color: white;
+    box-shadow: 0 .75rem .5rem -.5rem hsl(0 50% 80%);
+  }
+}
+</style>
+
+
 <form action="">
 	<input type="text" name="" value="La tua Email">
 	<input type="Checkbox" name="" value="Sottoscrivo">
-	<input type="button" name="" value="Subscribe">
+	<input type="submit" name="" value="Iscriviti!">
 </form>
