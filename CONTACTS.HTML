@@ -1,130 +1,142 @@
 <style type="text/css">
   
-  @import url('https://fonts.googleapis.com/css?family=Spartan&display=swap')
+  <style type="text/css">
+.form-style-5{
+  max-width: 500px;
+  padding: 10px 20px;
+  background: #f4f7f8;
+  margin: 10px auto;
+  padding: 20px;
+  background: #f4f7f8;
+  border-radius: 8px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.form-style-5 fieldset{
+  border: none;
+}
+.form-style-5 legend {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+.form-style-5 label {
+  display: block;
+  margin-bottom: 8px;
+}
+.form-style-5 input[type="text"],
+.form-style-5 input[type="date"],
+.form-style-5 input[type="datetime"],
+.form-style-5 input[type="email"],
+.form-style-5 input[type="number"],
+.form-style-5 input[type="search"],
+.form-style-5 input[type="time"],
+.form-style-5 input[type="url"],
+.form-style-5 textarea,
+.form-style-5 select {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background: rgba(255,255,255,.1);
+  border: none;
+  border-radius: 4px;
+  font-size: 15px;
+  margin: 0;
+  outline: 0;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box; 
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box; 
+  background-color: #e8eeef;
+  color:#8a97a0;
+  -webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 30px;
+}
+.form-style-5 input[type="text"]:focus,
+.form-style-5 input[type="date"]:focus,
+.form-style-5 input[type="datetime"]:focus,
+.form-style-5 input[type="email"]:focus,
+.form-style-5 input[type="number"]:focus,
+.form-style-5 input[type="search"]:focus,
+.form-style-5 input[type="time"]:focus,
+.form-style-5 input[type="url"]:focus,
+.form-style-5 textarea:focus,
+.form-style-5 select:focus{
+  background: #d2d9dd;
+}
+.form-style-5 select{
+  -webkit-appearance: menulist-button;
+  height:35px;
+}
+.form-style-5 .number {
+  background: #1abc9c;
+  color: #fff;
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  font-size: 0.8em;
+  margin-right: 4px;
+  line-height: 30px;
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+  border-radius: 15px 15px 15px 0px;
+}
 
-$form-bg: #f8f4e5
-$form-border: #f45702
-$form-shadow: #dfae4b
-$form-focus: #6bd4b1
-$font-size: 12pt
-$font-face: 'Spartan'
-$font-color: #2A293E
-
-*
-  margin: 0
-  padding: 0
-
-body
-  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/38816/image-from-rawpixel-id-2044837-jpeg.jpg") center center no-repeat
-  background-size: cover
-  width: 100vw
-  height: 100vh
-  display: grid
-  align-items: center
-  justify-items: center
-  font-size: $font-size
-  font-family: $font-face
-  color: $font-color
-  
-.contact-us
-  background: $form-bg
-  padding: 50px 100px
-  border-top: 10px solid $form-border
-
-label, input, textarea
-  display: block
-  width: 100%
-  font-size: $font-size
-  line-height: $font-size * 2
-  font-family: $font-face
-    
-input
-  margin-bottom: $font-size * 2
-    
-h3
-  font-weight: normal
-  font-size: 10pt
-  line-height: $font-size * 2
-  font-style: italic
-  margin: 0 0 .5em 0
-    
-span
-  font-size: 8pt
-  
-em
-  color: $form-border
-  font-weight: bold
-  
-input, textarea
-  border: none
-  border: 1px solid rgba(0,0,0,.1)
-  border-radius: 2px
-  background: $form-bg
-  padding-left: 5px
-  outline: none
-  
-input:focus, textarea:focus
-  border: 1px solid $form-focus
- 
-textarea
-  resize: none
-  
-button
-  display: block
-  float: right
-  line-height: $font-size * 2
-  padding: 0 20px
-  border: none
-  background: $form-border
-  color: white
-  letter-spacing: 2px
-  transition: .2s all ease-in-out
-  border-bottom: 2px solid transparent
-  outline: none
-  
-  &:hover
-    background: inherit
-    color: $form-border
-    border-bottom: 2px solid $form-border
-  
-::selection 
-  background: rgb(255, 199, 184)
-
-input:-webkit-autofill,
-input:-webkit-autofill:hover, 
-input:-webkit-autofill:focus,
-textarea:-webkit-autofill,
-textarea:-webkit-autofill:hover,
-textarea:-webkit-autofill:focus
-  border: 1px solid $form-focus
-  -webkit-text-fill-color: $font-color
-  -webkit-box-shadow: 0 0 0px 1000px $form-bg inset
-  transition: background-color 5000s ease-in-out 0s
+.form-style-5 input[type="submit"],
+.form-style-5 input[type="button"]
+{
+  position: relative;
+  display: block;
+  padding: 19px 39px 18px 39px;
+  color: #FFF;
+  margin: 0 auto;
+  background: #1abc9c;
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  width: 100%;
+  border: 1px solid #16a085;
+  border-width: 1px 1px 3px;
+  margin-bottom: 10px;
+}
+.form-style-5 input[type="submit"]:hover,
+.form-style-5 input[type="button"]:hover
+{
+  background: #109177;
+}
+</style>
 </style>
 
-.contact-us
-  form action="#"
-    label for="customerName"
-      | NAME 
-      em &#x2a;
-    input type="text" id="customerName" name="customerName" required=""
-    label for="customerEmail"
-      | EMAIL 
-      em &#x2a;
-    input type="email" id="customerEmail" name="customerEmail" required=""
-    label for="customerPhone" PHONE
-    input type="tel" id="customerPhone" name="customerPhone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-    label for="orderNumber" ORDER NUMBER
-    input type="text" id="orderNumber" name="orderNumber"
-    label for="customerNote"
-      | YOUR MESSAGE 
-      em &#x2a;
-    textarea rows="4" id="customerNote" name="customerNote" required=""
-    h3 Please provide all the information about your issue you can.
-    label for="spamProtection"
-      | SPAM PROTECTION 
-      em &#x2a; 
-      span &nbsp;&nbsp;&nbsp;&nbsp;What day comes before July 11th?
-    input type="text" id="spamProtection" name="spamProtection"
-    button  id="customerOrder" SUBMIT
-  
+<div class="form-style-5">
+<form>
+<fieldset>
+<legend><span class="number">1</span> Candidate Info</legend>
+<input type="text" name="field1" placeholder="Your Name *">
+<input type="email" name="field2" placeholder="Your Email *">
+<textarea name="field3" placeholder="About yourself"></textarea>
+<label for="job">Interests:</label>
+<select id="job" name="field4">
+<optgroup label="Indoors">
+  <option value="fishkeeping">Fishkeeping</option>
+  <option value="reading">Reading</option>
+  <option value="boxing">Boxing</option>
+  <option value="debate">Debate</option>
+  <option value="gaming">Gaming</option>
+  <option value="snooker">Snooker</option>
+  <option value="other_indoor">Other</option>
+</optgroup>
+<optgroup label="Outdoors">
+  <option value="football">Football</option>
+  <option value="swimming">Swimming</option>
+  <option value="fishing">Fishing</option>
+  <option value="climbing">Climbing</option>
+  <option value="cycling">Cycling</option>
+  <option value="other_outdoor">Other</option>
+</optgroup>
+</select>      
+</fieldset>
+<fieldset>
+<legend><span class="number">2</span> Additional Info</legend>
+<textarea name="field3" placeholder="About Your School"></textarea>
+</fieldset>
+<input type="submit" value="Apply" />
+</form>
+</div>
